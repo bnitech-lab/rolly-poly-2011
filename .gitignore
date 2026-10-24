@@ -1,0 +1,36 @@
+# Visual Studio build output and per-user files
+bin/
+obj/
+*.suo
+*.user
+*.cache
+*.pdb
+*.exe
+*.dll
+.vs/
+
+# Ranking file the game writes at run time (it holds player names)
+rank.txt
+
+# Pictures and archives are not part of this release
+WindowsApplication1/Resources/
+*.jpg
+*.jpeg
+*.gif
+*.png
+*.bmp
+*.ico
+*.psd
+*.zip
+
+# Office documents (they carry author metadata)
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db

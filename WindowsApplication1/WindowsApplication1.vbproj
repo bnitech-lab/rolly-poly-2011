@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DAEDB07-6BFE-4158-B1C6-BC687A5E3922}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RollyPoly.My.MyApplication</StartupObject>
+    <RootNamespace>RollyPoly</RootNamespace>
+    <AssemblyName>RollyPoly</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RollyPoly.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RollyPoly.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Creater.Designer.vb">
+      <DependentUpon>Creater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Creater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rank.Designer.vb">
+      <DependentUpon>rank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monopoly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monopoly.Designer.vb">
+      <DependentUpon>Monopoly.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="call.Designer.vb">
+      <DependentUpon>call.vb</DependentUpon>
+    </Compile>
+    <Compile Include="call.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="start.Designer.vb">
+      <DependentUpon>start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Creater.resx">
+      <DependentUpon>Creater.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rank.resx">
+      <DependentUpon>rank.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monopoly.resx">
+      <DependentUpon>Monopoly.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="call.resx">
+      <DependentUpon>call.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\말레이시아-쿠알라룸프루.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\중국-베이징.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\태국-방콕.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\터키-앙카라.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\필리핀-마닐라.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\열쇠.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\배.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\무인도.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\그리스-아테네.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\네털란드-암스테르담.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\벨기에-브뤼셀.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\아르헨티나-부에노스아이레스.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\우루과이-몬테비데오.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\이스라엘-예루살렘.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\멕시코-멕시코시티.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\브라질-브라질리아.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\스페인-마드리드.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\싱가포르-싱가포르.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\이탈리아-로마.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\포르투칼-리스본.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\대한민국-서울.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\독일-베를린.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\미국-워싱턴.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\영국-런던.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\일본-도쿄.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\프랑스-파리.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
